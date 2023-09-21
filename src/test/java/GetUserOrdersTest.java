@@ -1,7 +1,6 @@
 import com.github.javafaker.Faker;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
-import models.Order;
 import models.User;
 import order.OrderClient;
 import order.OrderGenerator;
@@ -20,7 +19,6 @@ public class GetUserOrdersTest {
     Faker faker = new Faker();
     private final OrderClient orderClient = new OrderClient();
     private final OrderGenerator orderGenerator = new OrderGenerator();
-    Order order;
     UserClient userClient = new UserClient();
     User user;
     String accessToken;
